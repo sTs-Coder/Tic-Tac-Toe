@@ -1,0 +1,323 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		.table1{
+			margin-top: 150px;
+			width: 280px;
+		}
+		.table2{
+			width: 70%;
+			height: 70%;
+		    box-shadow: 0px 0px 20px 10px #00ffff;
+
+		}
+	    .text1
+		{
+			width: 70px;
+			height: 60px;
+			text-align: center;
+			font-size: 30px;
+			background-color: transparent;
+			border:none;
+			color: #00ffff; 
+		}
+		input[type=button]
+		{
+            background-image: linear-gradient(#00ffff,#003333);
+            height: 100%;
+            border: none;
+            width: 100%;
+		}
+		.button1{
+			width: 120px;
+			height: 30px;
+			cursor: pointer;
+			background-image: linear-gradient(#00ffff,#003333);
+			border: none;
+			border-radius: 5px;
+		}
+		.button1:hover
+		{
+            background-image: linear-gradient(#003333,#00ffff);
+		}
+		button{
+            cursor: pointer;
+		}
+		td{
+			border:1px solid #00ffff;
+		}
+		.td{
+			border:1px solid black;
+		}
+		.new{
+			background-color:transparent;
+			border: none;
+			color: #00ffff; 
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+	</style>
+	<script type="text/javascript">
+		function promp()
+		{
+		var x,y;
+		x=prompt("Enter the 1st player name : ");
+		y=prompt("Enter the 2nd player name : ");
+		document.getElementById("nm1").value=x;
+		document.getElementById("nm2").value=y;	
+		}
+		function p1()
+		{
+			var x="O";
+			document.getElementById("t1").value=x;
+		}
+		function p2()
+		{
+			var x="O";
+			document.getElementById("t2").value=x;
+		}
+		function p3()
+		{
+			var x="O";
+			document.getElementById("t3").value=x;
+		}
+		function p4()
+		{
+			var x="O";
+			document.getElementById("t4").value=x;
+		}		
+		function p5()
+		{
+			var x="O";
+			document.getElementById("t5").value=x;
+		}
+		function p6()
+		{
+			var x="O";
+			document.getElementById("t6").value=x;
+		}
+		function p7()
+		{
+			var x="O";
+			document.getElementById("t7").value=x;
+		}
+		function p8()
+		{
+			var x="O";
+			document.getElementById("t8").value=x;
+		}		
+		function p9()
+		{
+			var x="O";
+			document.getElementById("t9").value=x;
+		}
+		function q1()
+		{
+			var x="X";
+			document.getElementById("t1").value=x;
+		}
+		function q2()
+		{
+			var x="X";
+			document.getElementById("t2").value=x;
+		}
+		function q3()
+		{
+			var x="X";
+			document.getElementById("t3").value=x;
+		}
+		function q4()
+		{
+			var x="X";
+			document.getElementById("t4").value=x;
+		}		
+		function q5()
+		{
+			var x="X";
+			document.getElementById("t5").value=x;
+		}
+		function q6()
+		{
+			var x="X";
+			document.getElementById("t6").value=x;
+		}
+		function q7()
+		{
+			var x="X";
+			document.getElementById("t7").value=x;
+		}
+		function q8()
+		{
+			var x="X";
+			document.getElementById("t8").value=x;
+		}		
+		function q9()
+		{
+			var x="X";
+			document.getElementById("t9").value=x;
+		}
+		function win()
+		{
+			var a,b,c,d,e,f,g,h,i;
+			a=document.getElementById("t1").value;
+			b=document.getElementById("t2").value;
+            c=document.getElementById("t3").value;
+			d=document.getElementById("t4").value;
+			e=document.getElementById("t5").value;
+			f=document.getElementById("t6").value;
+			g=document.getElementById("t7").value;
+			h=document.getElementById("t8").value;
+			i=document.getElementById("t9").value;
+			x=document.getElementById("nm1").value;
+			y=document.getElementById("nm2").value;
+            if(a=="X"&&b=="X"&&c=="X")
+             {
+                alert(y+" is the winer.");
+             }
+            else if(d=="X"&&e=="X"&&f=="X")
+             {
+                alert(y+" is the winer.");
+             }  
+            else if(g=="X"&&h=="X"&&i=="X")
+             {
+                alert(y+" is the winer.");
+             } 
+            else if(a=="X"&&d=="X"&&g=="X")
+             {
+                alert(y+" is the winer.");
+             }
+            else if(b=="X"&&e=="X"&&h=="X")
+             {
+                alert(y+" is the winer.");
+             }
+            else if(c=="X"&&f=="X"&&i=="X")
+             {
+                alert(y+" is the winer.");
+             }
+            else if(a=="X"&&e=="X"&&i=="X")
+             {
+                alert(y+" is the winer.");
+             }   
+            else if(g=="X"&&e=="X"&&c=="X")
+             {
+                alert(y+" is the winer.");
+             }
+            else if(a=="O"&&b=="O"&&c=="O")
+             {
+                alert(x+" is the winer.");
+             }
+            else if(d=="O"&&e=="O"&&f=="O")
+             {
+                alert(x+" is the winer.");
+             }  
+            else if(g=="O"&&h=="O"&&i=="O")
+             {
+                alert(x+" is the winer.");
+             } 
+            else if(a=="O"&&d=="O"&&g=="O")
+             {
+                alert(x+" is the winer.");
+             }
+            else if(b=="O"&&e=="O"&&h=="O")
+             {
+               alert(x+" is the winer.");
+             }
+            else if(c=="O"&&f=="O"&&i=="O")
+             {
+                alert(x+" is the winer.");
+             }
+            else if(a=="O"&&e=="O"&&i=="O")
+             {
+                alert(x+" is the winer.");
+             }   
+            else if(g=="O"&&e=="O"&&c=="O")
+             {
+                alert(x+" is the winer.");
+             } 
+            else
+             {
+                alert("Match is Draw");
+             } 
+		}
+	</script>
+</head>
+<body bgcolor="black">
+<table align="center"  cellpadding="10" class="table1">
+<tr>
+	<td colspan="2" class="td">
+		<table class="table2" align="center">
+			<tr>
+				<td><input type="text" class="text1" id="t1"></td>
+				<td><input type="text" class="text1" id="t2"></td>
+				<td><input type="text" class="text1" id="t3"></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="text1" id="t4"></td>
+				<td><input type="text" class="text1" id="t5"></td>
+				<td><input type="text" class="text1" id="t6"></td>
+			</tr>
+			<tr>
+				<td><input type="text" class="text1" id="t7"></td>
+				<td><input type="text" class="text1" id="t8"></td>
+				<td><input type="text" class="text1" id="t9"></td>
+			</tr>
+		</table>
+	</td>
+</tr>	
+<tr>
+  <td class="td">
+  <table align="center" cellspacing="5">
+  	<tr>
+  		<td colspan="3" class="td"><input type="text" class="new" id="nm1" placeholder="Player1"></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="p1()">1</button></td>
+  		<td><button onclick="p2()">2</button></td>
+  		<td><button onclick="p3()">3</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="p4()">4</button></td>
+  		<td><button onclick="p5()">5</button></td>
+  		<td><button onclick="p6()">6</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="p7()">7</button></td>
+  		<td><button onclick="p8()">8</button></td>
+  		<td><button onclick="p9()">9</button></td>
+  	</tr>
+  </table>
+  </td>
+  <td class="td">
+  <table align="center" cellspacing="5">
+  	<tr>
+  		<td colspan="3" class="td"><input type="text" class="new" id="nm2" placeholder="Player2"></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="q1()">1</button></td>
+  		<td><button onclick="q2()">2</button></td>
+  		<td><button onclick="q3()">3</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="q4()">4</button></td>
+  		<td><button onclick="q5()">5</button></td>
+  		<td><button onclick="q6()">6</button></td>
+  	</tr>
+  	<tr>
+  		<td><button onclick="q7()">7</button></td>
+  		<td><button onclick="q8()">8</button></td>
+  		<td><button onclick="q9()">9</button></td>
+  	</tr>
+  </table>
+  </td>
+</tr>  
+<tr align="center" >
+	<td class="td"><button class="button1" onclick="promp()"><b>Play</b></button></td>
+	<td class="td"><button onclick="win()" class="button1"><b>Check</b></button></td>
+</tr>
+</table>
+</body>
+</html>
